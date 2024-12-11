@@ -17,6 +17,7 @@ paymentButton.addEventListener("click", async () => {
     email: "text@example.com",
     phone: "1234567890",
     productinfo: "BOLT",
+    enforce_paymethod: "upi",
     surl: "https://webhook.site/4a14a5d4-3df5-4d5c-8b18-18c92ff02c6d",
     furl: "https://test.payu.in/admin/test_response",
     lastname: "soni",
