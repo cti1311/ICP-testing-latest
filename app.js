@@ -9,7 +9,7 @@ async function sha512(str) {
 
 paymentButton.addEventListener("click", async () => {
   var data = {
-    key: "evEiGQ",
+    key: "smsplus",
     hash: "acda52ae0f08bb2a63a713d06fdc4362ad2b97b8cdf28918617b36edd5f6ddcbf5cff1b5f856cc74dbd503e56949d68b27aebdede55f3492446febe202444ac9",
     txnid: Math.floor(Math.random()*100000000),
     amount: "5000.00",
@@ -22,7 +22,7 @@ paymentButton.addEventListener("click", async () => {
     lastname: "soni",
     // service_provider: "payu_paisa"
   };
-  let salt = "pHEp8ohtYEZK6DUdkxQ4dP8tKCbVw28I" ; //Your organization's data cannot be pasted here. //await fetch("https://payu.0xcti.tech/api/getSalt/"+data.key);
+  let salt = "1b1b0" ; //Your organization's data cannot be pasted here. //await fetch("https://payu.0xcti.tech/api/getSalt/"+data.key);
   
   let hashString = `${data.key}|${data.txnid}|${data.amount}|${data.productinfo}|${data.firstname}|${data.email}|||||||||||${salt}`;
   data.hash = await sha512(hashString)
