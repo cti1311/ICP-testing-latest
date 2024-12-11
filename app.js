@@ -12,7 +12,7 @@ paymentButton.addEventListener("click", async () => {
     key: "smsplus",
     hash: "acda52ae0f08bb2a63a713d06fdc4362ad2b97b8cdf28918617b36edd5f6ddcbf5cff1b5f856cc74dbd503e56949d68b27aebdede55f3492446febe202444ac9",
     txnid: Math.floor(Math.random()*100000000),
-    amount: "5000.00",
+    amount: "1.00",
     firstname: "surbhi",
     email: "text@example.com",
     phone: "1234567890",
